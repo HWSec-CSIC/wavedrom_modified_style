@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+
+    <script src="../skins/default_noX.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.1.0/wavedrom.min.js" type="text/javascript"></script>
+</head>
+<body onload="WaveDrom.ProcessAll()">
+    <script type="WaveDrom">
+{ 
+  signal: 
+  [
+    { name: "CBD",  	wave: "x5555xxxxxxxxxxxxxxxxxxxxx", data: ["s(0)", "s(1)", "e(0)", "e(1)"],                         phase : 0.15},
+    { name: "RS",  		wave: "xxxxx4.4.4.4.xxxxxxxxxxxxx", data: ["A'(0,0)", "A'(0,1)", "A'(1,0)", "A'(1,1)"],             phase : 0.15},
+    { name: "BU_1", 	wave: "xx7..........7...7...xxxxx", data: ["NTT[s(0)]", "PWM[A'(0,0),s(0)]", "PWM[A'(1,0),s(0)]"],  phase : 0.15},
+    { name: "BU_2", 	wave: "xxx7..........7...7...xxxx", data: ["NTT[s(1)]", "PWM[A'(0,1),s(1)]", "PWM[A'(1,1),s(1)]"],  phase : 0.15},
+    { name: "BU_3",   wave: "xxxx7..........xxx7..7..xx", data: ["NTT[e(0)]", "ADD[As00, e'(0)]", "ADD[As01, t(0)]"],     phase : 0.15},
+    { name: "BU_4",   wave: "xxxxx7..........xxx7..7..x", data: ["NTT[e(1)]", "ADD[As01, e'(1)]", "ADD[As11, t(1)]"],     phase : 0.15},
+  ],
+  head: 
+  {
+    text:
+    ['tspan',
+    ['tspan', {dx:'0', fill:'purple', 'font-weight':'bold', 'font-style':'italic'}, 'START'],
+    ['tspan', {dx:'940',fill:'purple', 'font-weight':'bold', 'font-style':'italic'}, 'END']
+    ]
+  }
+}
+
+</script>
+</body>
+</html>
